@@ -5,7 +5,7 @@
     content="width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no,minimal-ui,viewport-fit=cover">
   <meta aframe-injected="" name="mobile-web-app-capable" content="yes">
   <meta aframe-injected="" name="theme-color" content="black">
-  
+
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <link rel="stylesheet" href="style.css">
 
@@ -21,44 +21,44 @@
     arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" id="scene" embedded="" gesture-detector=""
     inspector="" keyboard-shortcuts="" screenshot="" device-orientation-permission-ui="">
     
-    <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/CPU-Marker.patt" raycaster="objects: .clickable"
+    <a-marker id="animated-marker" type="pattern" preset="custom" url="PCComponents/CPU/CPU-Marker.patt" raycaster="objects: .clickable"
       emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
-      <a-image src="assets/CPU-info.png" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
+      <a-image src="PCComponents/CPU/CPU-info.png" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
     </a-marker>
 
-    <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/RAM-marker.patt" raycaster="objects: .clickable"
+    <a-marker id="animated-marker" type="pattern" preset="custom" url="PCComponents/RAM/RAM-marker.patt" raycaster="objects: .clickable"
       emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
-      <a-image src="assets/RAM-info.png" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
+      <a-image src="PCComponents/RAM/RAM-info.png" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
     </a-marker>
 
-    <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/HDD-Marker.patt" raycaster="objects: .clickable"
+    <a-marker id="animated-marker" type="pattern" preset="custom" url="PCComponents/HDD/HDD-Marker.patt" raycaster="objects: .clickable"
       emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
-      <a-image src="assets/HDD-info.png" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
+      <a-image src="PCComponents/HDD/HDD-info.png" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
     </a-marker>
 
-    <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/MBD-marker.patt" raycaster="objects: .clickable"
+    <a-marker id="animated-marker" type="pattern" preset="custom" url="PCComponents/MBD/MBD-marker.patt" raycaster="objects: .clickable"
       emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
-      <a-image src="assets/MBD-info.png" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
+      <a-image src="PCComponents/MBD/MBD-info.png" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
     </a-marker>
 
-    <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/GPU-marker.patt" raycaster="objects: .clickable"
+    <a-marker id="animated-marker" type="pattern" preset="custom" url="PCComponents/GPU/assets/marker.patt" raycaster="objects: .clickable"
       emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
-      <a-image src="assets/GPU-info.png" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
+      <a-image src="PCComponents/GPU/GPU-Info.png" scale="2 2 2" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
     </a-marker>
 
-    <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/PSU-marker.patt" raycaster="objects: .clickable"
+    <a-marker id="animated-marker" type="pattern" preset="custom" url="PCComponents/PSU/assets/marker.patt" raycaster="objects: .clickable"
       emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
-      <a-image src="assets/PSU-info.png" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
+      <a-image src="PCComponents/PSU/PSU-Info.png" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
     </a-marker>
 
-    <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/SSD-marker.patt" raycaster="objects: .clickable"
+    <a-marker id="animated-marker" type="pattern" preset="custom" url="PCComponents/SSD/assets/marker.patt" raycaster="objects: .clickable"
       emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
-      <a-image src="assets/SSD-info.png" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
+      <a-image src="PCComponents/SSD/SSD-Info.png" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
     </a-marker>
 
-    <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/DD-marker.patt" raycaster="objects: .clickable"
+    <a-marker id="animated-marker" type="pattern" preset="custom" url="PCComponents/DiskDrive/assets/marker.patt" raycaster="objects: .clickable"
       emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
-      <a-image  src="assets/DD-info.png" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
+      <a-image  src="PCComponents/DiskDrive/DiskDrive-Info.png" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
     </a-marker>
 
     <a-entity camera=""></a-entity>
