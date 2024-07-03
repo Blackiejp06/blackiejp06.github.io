@@ -6,6 +6,8 @@
   <meta aframe-injected="" name="mobile-web-app-capable" content="yes">
   <meta aframe-injected="" name="theme-color" content="black">
 
+  <script src="blackiejp06.github.io\aframe-master\dist"></script>
+
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <link rel="stylesheet" href="style.css">
 
@@ -20,6 +22,16 @@
   <a-scene vr-mode-ui="enabled: false;" loading-screen="enabled: false;"
     arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" id="scene" embedded="" gesture-detector=""
     inspector="" keyboard-shortcuts="" screenshot="" device-orientation-permission-ui="">
+
+    <a-light type="directional" light="castShadow:true;" position="1 1 1" intensity="0.5" shadow-camera-automatic="#objects"></a-light>
+    <a-camera position="0 0.4 0" wasd-controls="acceleration:10;"></a-camera>
+    <a-entity id="objects" scale="0.2 0.2 0.2" position="0 0 -1" shadow>
+      <a-box position="-1 0.5 1" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.25 -1" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder position="1 0.75 1" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+    </a-entity>
+    <a-plane follow-shadow="#objects" material="shader:shadow" shadow="cast:false;" rotation="-90 0 0" width="2" height="2"></a-plane>
+    <a-sky color="#ECECEC" hide-on-enter-ar></a-sky>
     
     <a-marker id="animated-marker" type="pattern" preset="custom" url="PCComponents/CPU/CPU-Marker.patt" raycaster="objects: .clickable"
       emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
