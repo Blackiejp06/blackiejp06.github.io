@@ -5,6 +5,8 @@
     content="width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no,minimal-ui,viewport-fit=cover">
   <meta aframe-injected="" name="mobile-web-app-capable" content="yes">
   <meta aframe-injected="" name="theme-color" content="black">
+  
+  <meta charset="utf-8">
 
   <script src="dist\aframe-master.js"></script>
 
@@ -21,7 +23,25 @@
 <body style="margin: -3.25px 0px 0px; overflow: hidden; width: 982px; height: 736.5px;">
   <a-scene vr-mode-ui="enabled: false;" loading-screen="enabled: false;"
     arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" id="scene" embedded="" gesture-detector=""
-    inspector="" keyboard-shortcuts="" screenshot="" device-orientation-permission-ui="">
+    inspector="" keyboard-shortcuts="" screenshot="" device-orientation-permission-ui=""    
+    reflection="directionalLight:a-light[type=directional]"
+    ar-hit-test="target:#objects;"
+    renderer="physicallyCorrectLights:true;colorManagement:true;exposure:1;toneMapping:ACESFilmic;"
+    shadow="type:pcfsoft"
+    xr-mode-ui="XRMode: xr">
+
+    <script>
+      AFRAME.registerComponent('follow-shadow', {
+        schema: {type: 'selector'},
+        init() {this.el.object3D.renderOrder = -1;},
+        tick() { 
+          if (this.data) {
+            this.el.object3D.position.copy(this.data.object3D.position); 
+            this.el.object3D.position.y-=0.001; // stop z-fighting
+          }
+        }
+      });
+    </script>
 
     <a-light type="directional" light="castShadow:true;" position="1 1 1" intensity="0.5" shadow-camera-automatic="#objects"></a-light>
     <a-camera position="0 0.4 0" wasd-controls="acceleration:10;"></a-camera>
