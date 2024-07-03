@@ -49,7 +49,7 @@
     <a-marker id="animated-marker" type="pattern" preset="custom" url="PCComponents/CPU/CPU-Marker.patt" raycaster="objects: .clickable"
       emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
       <a-image src="PCComponents/CPU/CPU-info.png" scale="2 2 2" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
-      <a-light type="directional" light="castShadow:true;" position="1 1 1" intensity="1" shadow-camera-automatic="#objects"></a-light>
+      <a-light type="directional" light="castShadow:true;" position="0 0 0" intensity="3" shadow-camera-automatic="#objects"></a-light>
       <a-camera position="0 0.4 0" wasd-controls="acceleration:10;"></a-camera>
       <a-entity id="objects" scale="0.2 0.2 0.2" position="0 0 -1" shadow>
         <a-box position="-1 0.5 1" rotation="0 45 0" color="#4CC3D9"></a-box>
