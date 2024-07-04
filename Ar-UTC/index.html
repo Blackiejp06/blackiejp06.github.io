@@ -101,6 +101,11 @@
     <a-marker id="animated-marker" type="pattern" preset="custom" url="PCComponents/SSD/assets/marker.patt" raycaster="objects: .clickable"
       emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
       <a-image src="PCComponents/SSD/SSD-Info.png" scale="2 2 2" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
+      <a-camera position="0 0.4 0" wasd-controls="acceleration:10;"></a-camera>
+      <a-entity id="objects" scale="0.6 0.6 0.6" position="0 0 -3" rotation="0 270 90" shadow 
+      gltf-model="PCComponents/SSD/Blender/SSD.gltf">
+      <a-animation attribute="rotation" to="0 360 0" repeat="indefinite" dur="5000"></a-animation>
+      </a-entity>
     </a-marker>
 
     <a-marker id="animated-marker" type="pattern" preset="custom" url="PCComponents/DiskDrive/assets/marker.patt" raycaster="objects: .clickable"
