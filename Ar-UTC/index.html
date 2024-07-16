@@ -44,118 +44,133 @@
 
     <!--a-sky color="#ECECEC" hide-on-enter-ar></a-sky-->
     <!--PC Components-->
-
+    <!--CPU-->
     <a-marker id="animated-marker" type="pattern" preset="custom" url="PCComponents/CPU/CPU-Marker.patt"
       raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
       <a-image src="PCComponents/CPU/CPU-info.png" scale="2 2 2" class="clickable" rotation="-90 0 0"
         gesture-handler></a-image>
-
+      <!--CPU Model-->
       <a-camera position="0 0.4 0" wasd-controls="acceleration:10;"></a-camera>
       <a-entity id="objects" scale="0.4 0.4 0.4" position="0 0 -2" rotation="0 0 0" shadow
         gltf-model="PCComponents/CPU/Blender/CPUBlender.gltf">
         <a-animation attribute="rotation" to="0 360 0" repeat="indefinite" dur="5000"></a-animation>
       </a-entity>
-      <!--a-plane follow-shadow="#objects" material="shader:shadow" shadow="cast:false;" rotation="-90 0 0" width="2" height="2"></a-plane-->
     </a-marker>
-
+    <!--RAM-->
     <a-marker id="animated-marker" type="pattern" preset="custom" url="PCComponents/RAM/RAM-marker.patt"
       raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
       <a-image src="PCComponents/RAM/RAM-info.png" scale="2 2 2" class="clickable" rotation="-90 0 0"
         gesture-handler></a-image>
+      <!--RAM Model-->
       <a-camera position="0 0.4 0" wasd-controls="acceleration:10;"></a-camera>
       <a-entity id="objects" scale="1 1 1" position="0 0 -2" rotation="0 -90 90" shadow
         gltf-model="PCComponents/RAM/RAM-Blender/RAMModel.gltf">
         <a-animation attribute="rotation" to="0 360 0" repeat="indefinite" dur="5000"></a-animation>
       </a-entity>
     </a-marker>
-
+    <!--HDD-->
     <a-marker id="animated-marker" type="pattern" preset="custom" url="PCComponents/HDD/HDD-Marker.patt"
       raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
       <a-image src="PCComponents/HDD/HDD-info.png" scale="2 2 2" class="clickable" rotation="-90 0 0"
         gesture-handler></a-image>
+      <!--HDD Model-->
       <a-camera position="0 0.4 0" wasd-controls="acceleration:10;"></a-camera>
       <a-entity id="objects" scale="0.6 0.6 0.6" position="0 0 -3" rotation="0 270 90" shadow
         gltf-model="PCComponents/HDD/Blender/HDD.gltf">
         <a-animation attribute="rotation" to="0 360 0" repeat="indefinite" dur="5000"></a-animation>
       </a-entity>
     </a-marker>
-
+    <!--MBD-->
     <a-marker id="animated-marker" type="pattern" preset="custom" url="PCComponents/MBD/MBD-marker.patt"
       raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
       <a-image src="PCComponents/MBD/MBD-info.png" scale="2 2 2" class="clickable" rotation="-90 0 0"
         gesture-handler></a-image>
+      <!--MBD Model-->
+      <a-camera position="0 0.4 0" wasd-controls="acceleration:10;"></a-camera>
+      <a-entity id="objects" scale="0.6 0.6 0.6" position="0 0 -3" rotation="0 270 90" shadow
+        gltf-model="PCComponents/HDD/Blender/HDD.gltf">
+        <a-animation attribute="rotation" to="0 360 0" repeat="indefinite" dur="5000"></a-animation>
+      </a-entity>
     </a-marker>
-
+    <!--GPU-->
     <a-marker id="animated-marker" type="pattern" preset="custom" url="PCComponents/GPU/assets/marker.patt"
       raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
       <a-image src="PCComponents/GPU/GPU-Info.png" scale="2 2 2" class="clickable" rotation="-90 0 0"
         gesture-handler></a-image>
+      <!--GPU Model-->
       <a-camera position="0 0.4 0" wasd-controls="acceleration:10;"></a-camera>
       <a-entity id="objects" scale="2 2 2" position="0 0 -3" rotation="0 90 0" shadow
         gltf-model="PCComponents/GPU/Blender/RTX3090.gltf">
         <a-animation attribute="rotation" to="0 360 0" repeat="indefinite" dur="5000"></a-animation>
       </a-entity>
     </a-marker>
-
+    <!--PSU-->
     <a-marker id="animated-marker" type="pattern" preset="custom" url="PCComponents/PSU/assets/marker.patt"
       raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
       <a-image src="PCComponents/PSU/PSU-Info.png" scale="2 2 2" class="clickable" rotation="-90 0 0"
         gesture-handler></a-image>
     </a-marker>
-
+    <!--SSD-->
     <a-marker id="animated-marker" type="pattern" preset="custom" url="PCComponents/SSD/assets/marker.patt"
       raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
       <a-image src="PCComponents/SSD/SSD-Info.png" scale="2 2 2" class="clickable" rotation="-90 0 0"
         gesture-handler></a-image>
+      <!--SSD Model-->
       <a-camera position="0 0.4 0" wasd-controls="acceleration:10;"></a-camera>
       <a-entity id="objects" scale="0.6 0.6 0.6" position="0 0 -3" rotation="0 270 90" shadow
         gltf-model="PCComponents/SSD/Blender/SSD.gltf">
         <a-animation attribute="rotation" to="0 360 0" repeat="indefinite" dur="5000"></a-animation>
       </a-entity>
     </a-marker>
-
+    <!--DD-->
     <a-marker id="animated-marker" type="pattern" preset="custom" url="PCComponents/DiskDrive/assets/marker.patt"
       raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
       <a-image src="PCComponents/DiskDrive/DiskDrive-Info.png" scale="2 2 2" class="clickable" rotation="-90 0 0"
         gesture-handler></a-image>
     </a-marker>
-    <!--Projects-->
 
+    <!--Projects-->
+    <!--RBArm-->
     <a-marker id="animated-marker" type="pattern" preset="custom" url="Projects/RBArm/assets/marker.patt"
       raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
       <a-image src="Projects/RBArm/assets/asset.png" scale="4 3 3" class="clickable" rotation="-90 0 0"
         gesture-handler></a-image>
     </a-marker>
+    <!--GreenHouse-->
     <a-marker id="animated-marker" type="pattern" preset="custom" url="Projects/GreenHouse/assets/marker.patt"
       raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
       <a-image src="Projects/GreenHouse/assets/asset.png" scale="3 3 3" class="clickable" rotation="-90 0 0"
         gesture-handler></a-image>
     </a-marker>
-
+    <!--RGB Lights-->
     <a-marker id="animated-marker" type="pattern" preset="custom" url="Projects/RGBLights/assets/marker.patt"
       raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
       <a-image src="Projects/RGBLights/assets/asset.png" scale="8 2 2" class="clickable" rotation="-90 0 0"
         gesture-handler></a-image>
     </a-marker>
+    <!--OS-->
     <a-marker id="animated-marker" type="pattern" preset="custom" url="Projects/OsPrj/assets/marker.patt"
       raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
       <a-image src="Projects/OsPrj/assets/asset.png" scale="3 2 2" class="clickable" rotation="-90 0 0"
         gesture-handler></a-image>
     </a-marker>
-
+    <!--VR-->
     <a-marker id="animated-marker" type="pattern" preset="custom" url="Projects/VrPrj/assets/marker.patt"
       raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
       <a-image src="Projects/VrPrj/assets/asset.png" scale="1 1 1" class="clickable" rotation="-90 0 0"
         gesture-handler></a-image>
     </a-marker>
-
+    <!--AR-->
+    <a-marker id="animated-marker" type="pattern" preset="custom" url="Projects/ArPrj/assets/marker.patt"
+      raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+      <a-image src="Projects/ArPrj/assets/asset.png" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
+    </a-marker>
 
     <a-entity camera=""></a-entity>
     <canvas class="a-canvas a-mouse-cursor-hover" data-aframe-canvas="true" width="1227" height="921"> </canvas>
     <a-entity light="" data-aframe-default-light="" aframe-injected=""></a-entity>
     <a-entity light="" position="" data-aframe-default-light="" aframe-injected=""></a-entity>
   </a-scene>
-
 
   <video autoplay="" muted="" playsinline="" id="arjs-video"
     style="width: 982px; height: 736.5px; position: absolute; top: 0px; left: 0px; z-index: -2; margin-left: 0px; margin-top: -3.25px;"></video>
